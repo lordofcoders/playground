@@ -1,7 +1,18 @@
-/**
- * Created with JetBrains WebStorm.
- * User: thekoder
- * Date: 12/11/13
- * Time: 1:57 PM
- * To change this template use File | Settings | File Templates.
- */
+require.config({
+    paths: {
+        jQuery: 'js/lib/jquery',
+        Underscore: 'js/lib/underscore',
+        Backbone: 'js/lib/backbone',
+        text: 'js/lib/text',
+        templates: '../templates'
+    },
+    shim: {
+        'Backbone': ['Underscore', 'jQuery'],
+        'Playground': ['Backbone']
+    }
+});
+
+require(['Playground'], function(Playground){
+    Playground.initialize();
+
+})

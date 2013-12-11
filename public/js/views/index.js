@@ -1,7 +1,10 @@
-/**
- * Created with JetBrains WebStorm.
- * User: thekoder
- * Date: 12/11/13
- * Time: 2:04 PM
- * To change this template use File | Settings | File Templates.
- */
+define(['text!templates/index.html'], function(indexTemplate) {
+    var indexView = Backbone.View.extend({
+        el: $('#content'),
+        render: function() {
+            this.$el.html(indexTemplate);
+        }
+    });
+
+    return new indexView;
+});
