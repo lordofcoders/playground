@@ -1,9 +1,9 @@
 require.config({
     paths: {
-        jQuery: 'js/lib/jquery',
-        Underscore: 'js/lib/underscore',
-        Backbone: 'js/lib/backbone',
-        text: 'js/lib/text',
+        jQuery: 'lib/jquery',
+        Underscore: 'lib/underscore',
+        Backbone: 'lib/backbone',
+        text: 'lib/text',
         templates: '../templates'
     },
     shim: {
